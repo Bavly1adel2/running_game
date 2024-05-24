@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 02;
+            box-sizing: border-box;
+        }
+        #canvas1{
+            border: 5px solid black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 90wv;
+            height: 90vh;
+            font-family: 'Black Ops One', cursive;
+        }
+        #player,#layer5,#layer4,#layer3,#layer2,#layer1,#enemy_fly,#enemy_plant,#enemy_spider,#fire,#collisionanimate,#enemy_sk,#lives,#proctlin{
+            display: none;
+        }
+        @media only screen and (max-width: 748px) {
+            #canvas1{
+                width: 400px;
+            }
+        }
+</style>
+</head>
+<body>
+    <canvas id="canvas1"></canvas>
+    <img id="player" src="player (4).png" >
+    <img id="layer1" src="Picsart_23-08-19_21-16-44-376.jpg" >
+    <img id="layer2" src="Picsart_23-08-16_21-05-34-234-removebg-preview.png" >
+    <img id="layer3" src="Picsart_23-08-16_21-17-42-489-removebg-preview.png" >
+    <img id="layer4" src="layer-4.png" >
+    <img id="layer5" src="layer-5 (1).png" >
+    <img id="enemy_fly" src="enemy_fly (1).png" >
+    <img id="enemy_plant" src="enemy_plant (1).png" >
+   <img id="enemy_spider" src="enemy_spider_big (1).png" >
+   <img id="enemy_sk" src="skeleton-02_chasing_00ready_0.png" >
+   <img  id="fire" src="fire.png">
+   <img id="collisionanimate" src="boom (2).png" >
+   <img id="lives" src="social-media-concept-with-elements-removebg-preview.png" >
+   <img id="proctlin" src="fire.png" >
+    <script  src="index.js"></script>
+
+  
+<button id="box" onclick="play()">Start Game</button>
+    <script>
+
+function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+
+    }
+    </script>
+</body>
+</html>
